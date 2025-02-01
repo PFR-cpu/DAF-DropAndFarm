@@ -112,23 +112,41 @@ function ansNo(){
     questcount++
     checkAns()
 }
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+        console.log('');
+        alert('Ссылка скопирована в буфер обмена');
+    }, function(err) {
+        console.error('Could not copy text: ', err);
+        alert('Failed to copy text. Please try again.');
+    });
+}
+
 function checkAns(){
 
     if(questcount == 1){
         question.innerHTML = 'Вы хотели бы участвовать в интересных крипто активностях <br> и наращивать свой капитал без вложений?'
-        question.style.fontSize = '12';
+        question.style.fontSize = '8vw';
         question.style.textAlign = 'center'
         question.style.marginLeft = '8vw'
+        if(window.innerWidth < 768){
+            question.style.fontSize ='11px'
+            question.style.marginLeft = '6vw'
+        }
     }
     if(questcount == 2){
         question.innerHTML = 'У вас уже есть солидный капитал?'
-        question.style.fontSize = '16px';
+        question.style.fontSize = '10vw';
+        if(window.innerWidth < 768){
+            question.style.fontSize ='10px'
+            
+        }
 
     }
     if(questcount == 3){
         question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! - <button onclick="copyToClipBoard(EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG)" >ссылка на покупку</button> '
         yesno.style.display = 'none';
-        question.style.fontSize ='12px'
+        question.style.fontSize ='8px'
         question.style.marginLeft = '6vw'
         if(window.innerWidth < 768){
             question.style.fontSize ='12px'
@@ -189,13 +207,4 @@ function getIf(){
         behavior:'smooth'
     });
     closeModal()
-}
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(function() {
-        console.log('');
-        alert('Ссылка скопирована в буфер обмена');
-    }, function(err) {
-        console.error('Could not copy text: ', err);
-        alert('Failed to copy text. Please try again.');
-    });
 }
