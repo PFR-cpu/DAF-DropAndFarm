@@ -423,6 +423,9 @@ animation-duration: 2.2s;
 }
 /* Mobile Styles */
 @media (max-width: 768px) {
+    #top-drop{
+    margin-left:30.5vmax;
+    }
     #header-td{
         font-size: 5vmax;
         width:10vw ;
