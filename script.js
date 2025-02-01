@@ -128,7 +128,8 @@ function checkAns(){
     if(questcount == 3){
         question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! - ссылка на покупку '
         yesno.style.display = 'none';
-        question.style.fontSize ='10.8vw'
+        question.style.fontSize ='12px'
+        question.style.marginLeft = '6vw'
         if(window.innerWidth < 768){
             question.style.fontSize ='12px'
             question.style.marginLeft = '6vw'
