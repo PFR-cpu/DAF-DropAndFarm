@@ -6,7 +6,9 @@
     font-family: 'Roboto';
     src: url(RobotoCondensed-Black.ttf);
 }
-
+#linkbtn{
+    font-size:3vw;
+}
 body{
     background-color: rgb(0, 0, 0);
    /* animation-name: newworldappearance; */
