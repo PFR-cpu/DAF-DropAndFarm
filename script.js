@@ -144,25 +144,25 @@ function checkAns(){
 
     }
     if(questcount == 3){
-        question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! -EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG'
+        question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! - EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG';
         yesno.style.display = 'none';
         question.style.fontSize ='2vw'
         question.style.marginLeft = '6vw'
         if(window.innerWidth < 768){
-            question.style.fontSize ='12px'
-            question.style.marginLeft = '6vw'
+            question.style.fontSize ='7px'
+            question.style.marginLeft = '4vw'
         }
     }
 }
 
 function endQuest() {
     if(anwer == 1){
-        question.innerHTML = 'Cсылка на покупку! - <span><EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG</span>'
+        question.innerHTML = 'Cсылка на покупку! - EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG'
         yesno.style.display = 'none';
         question.style.fontSize ='1.8vw'
     }
     if(anwer == 1,questcount == 2){
-        question.innerHTML = 'Тогда купите наш токен и приумножьте свои активы <br>Cсылка на покупку! - EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG >'
+        question.innerHTML = 'Тогда купите наш токен и приумножьте свои активы <br>Cсылка на покупку! - EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG '
         
     }
 }
