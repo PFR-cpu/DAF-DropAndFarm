@@ -144,7 +144,7 @@ function checkAns(){
 
     }
     if(questcount == 3){
-        question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! - <button id="startquestion" onclick="copyToClipBoard("EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG")" >ссылка на покупку</button> '
+        question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! - <button  id="linkbtn"  onclick="copyToClipBoard("EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG")" >ссылка на покупку</button> '
         yesno.style.display = 'none';
         question.style.fontSize ='5vw'
         question.style.marginLeft = '6vw'
@@ -157,12 +157,12 @@ function checkAns(){
 
 function endQuest() {
     if(anwer == 1){
-        question.innerHTML = 'Cсылка на покупку! - <span><button id="startquestion" onclick="copyToClipBoard("EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG")" >ссылка на покупку</button></span>'
+        question.innerHTML = 'Cсылка на покупку! - <span><button  id="linkbtn"  onclick="copyToClipBoard("EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG")" >ссылка на покупку</button></span>'
         yesno.style.display = 'none';
         question.style.fontSize ='1.8vw'
     }
     if(anwer == 1,questcount == 2){
-        question.innerHTML = 'Тогда купите наш токен и приумножьте свои активы <br>Cсылка на покупку! - <button id="startquestion" onclick="copyToClipBoard("EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG")" >ссылка на покупку</button>'
+        question.innerHTML = 'Тогда купите наш токен и приумножьте свои активы <br>Cсылка на покупку! - <button id="linkbtn" onclick="copyToClipBoard("EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG")" >ссылка на покупку</button>'
         
     }
 }
