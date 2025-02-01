@@ -112,7 +112,7 @@ function ansNo(){
     questcount++
     checkAns()
 }
-function copyToClipboard(text) {
+function copyToClipBoard(text) {
     navigator.clipboard.writeText(text).then(function() {
         console.log('');
         alert('Ссылка скопирована в буфер обмена');
