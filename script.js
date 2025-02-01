@@ -126,7 +126,7 @@ function checkAns(){
 
     if(questcount == 1){
         question.innerHTML = 'Вы хотели бы участвовать в интересных крипто активностях <br> и наращивать свой капитал без вложений?'
-        question.style.fontSize = '8vw';
+        question.style.fontSize = '4.5vw';
         question.style.textAlign = 'center'
         question.style.marginLeft = '8vw'
         if(window.innerWidth < 768){
@@ -136,7 +136,7 @@ function checkAns(){
     }
     if(questcount == 2){
         question.innerHTML = 'У вас уже есть солидный капитал?'
-        question.style.fontSize = '10vw';
+        question.style.fontSize = '7vw';
         if(window.innerWidth < 768){
             question.style.fontSize ='10px'
             
@@ -144,9 +144,9 @@ function checkAns(){
 
     }
     if(questcount == 3){
-        question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! - <button onclick="copyToClipBoard(EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG)" >ссылка на покупку</button> '
+        question.innerHTML = 'Тогда возьмите кредит в банке и купите наш токен <br>Cсылка на покупку! - <button id="startquestion" onclick="copyToClipBoard('EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG')" >ссылка на покупку</button> '
         yesno.style.display = 'none';
-        question.style.fontSize ='8px'
+        question.style.fontSize ='5vw'
         question.style.marginLeft = '6vw'
         if(window.innerWidth < 768){
             question.style.fontSize ='12px'
@@ -157,12 +157,12 @@ function checkAns(){
 
 function endQuest() {
     if(anwer == 1){
-        question.innerHTML = 'Cсылка на покупку! - <span><button onclick="copyToClipBoard(EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG)" >ссылка на покупку</button></span>'
+        question.innerHTML = 'Cсылка на покупку! - <span><button id="startquestion" onclick="copyToClipBoard('EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG')" >ссылка на покупку</button></span>'
         yesno.style.display = 'none';
         question.style.fontSize ='1.8vw'
     }
     if(anwer == 1,questcount == 2){
-        question.innerHTML = 'Тогда купите наш токен и приумножьте свои активы <br>Cсылка на покупку! - <button onclick="copyToClipBoard(EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG)" >ссылка на покупку</button>'
+        question.innerHTML = 'Тогда купите наш токен и приумножьте свои активы <br>Cсылка на покупку! - <button id="startquestion" onclick="copyToClipBoard('EQC2h19vMjR9240jthGEraMfs0vaWJnVjG9hByQbwNVY5iiG')" >ссылка на покупку</button>'
         
     }
 }
